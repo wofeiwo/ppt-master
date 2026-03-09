@@ -208,9 +208,7 @@ ppt-master/
 <details>
 <summary><b>Q: What's the difference between the three Executors?</b></summary>
 
-- **Executor_General**: General scenarios, flexible layout
-- **Executor_Consultant**: General consulting, data visualization
-- **Executor_Consultant_Top**: Top consulting (MBB level), 5 core techniques
+- **Executor**: Unified execution role, adapts automatically based on style type in design specification
 
 </details>
 

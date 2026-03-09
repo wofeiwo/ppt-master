@@ -40,8 +40,8 @@ VALID_ASPECT_RATIOS = [
 # 官方文档: "512px", "1K", "2K", "4K" (必须大写 K)
 VALID_IMAGE_SIZES = ["512px", "1K", "2K", "4K"]
 
-# 默认模型
-DEFAULT_MODEL = "gemini-3.1-flash-image-preview"
+# 默认模型（可从环境变量 GEMINI_MODEL 覆盖）
+DEFAULT_MODEL = os.environ.get("GEMINI_MODEL", "google/gemini-3.1-flash-image-preview")
 
 # 重试配置
 MAX_RETRIES = 3          # 最大重试次数

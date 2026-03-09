@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 PPT Master 是一个 AI 驱动的多格式 SVG 内容生成系统。通过多角色协作（Strategist → Image_Generator → Executor → Optimizer），将源文档（PDF/URL/Markdown）转化为高质量 SVG 页面，并导出为 PPTX。
 
-**核心流程**：`源文档 → 创建项目 → 模板选项 → Strategist八项确认 → [Image_Generator] → Executor → 后处理 → 导出PPTX`
+**核心流程**：`源文档 → 创建项目 → 模板选项 → Strategist三阶段确认 → [Image_Generator] → Executor → 后处理 → 导出PPTX`
 
 **完整工作流和规则手册**：执行 PPT 生成任务前，必须阅读 [AGENTS.md](./AGENTS.md)。
 
@@ -43,7 +43,7 @@ python3 -m http.server -d <项目路径>/svg_final 8000
 
 ## 架构与关键目录
 
-- `roles/` — 7个 AI 角色定义文件（Strategist、Image_Generator、Executor_General/Consultant/Consultant_Top、Optimizer_CRAP、Template_Designer）
+- `roles/` — 5个 AI 角色定义文件（Strategist、Image_Generator、Executor、Optimizer_CRAP、Template_Designer）
 - `tools/` — 28个 Python 工具脚本，每个独立可调用。核心入口：`finalize_svg.py`（后处理统一入口）、`svg_to_pptx.py`（PPTX导出）、`project_manager.py`（项目管理）
 - `templates/layouts/` — 页面布局模板（General、Consultant、Consultant_Top 等多种风格）
 - `templates/charts/` — 13种标准化图表 SVG 模板

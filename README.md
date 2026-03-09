@@ -74,7 +74,7 @@ pip install -r requirements.txt
 ```
 用户：我有一份关于 Q3 季度业绩的报告，需要制作成 PPT
 
-AI（Strategist 角色）：好的，在开始之前我需要完成八项确认...
+AI（Strategist 角色）：好的，在开始之前我需要完成三阶段确认...
    1. 画布格式：[建议] PPT 16:9
    2. 页数范围：[建议] 8-10 页
    ...
@@ -137,7 +137,7 @@ AI（Strategist 角色）：好的，在开始之前我需要完成八项确认.
     ↓
 [需要新模板？] → 使用 /create-template 工作流单独创建
     ↓
-[Strategist] 策略师 - 八项确认与设计规范
+[Strategist] 策略师 - 三阶段确认与设计规范
     ↓
 [Image_Generator] 图片生成师（当选择 AI 生成时）
     ↓
@@ -156,7 +156,10 @@ AI（Strategist 角色）：好的，在开始之前我需要完成八项确认.
 
 > 📖 详细工作流程请参阅 [工作流教程](./docs/workflow_tutorial.md) 和 [角色定义](./roles/README.md)
 
-> 💡 **PPT 编辑提示**：导出的 PPTX 页面为 SVG 格式。若需编辑内容，请在 PowerPoint 中选中页面，右键选择 **"转换为形状"** (Convert to Shape)。此功能需要 **Office 2016** 或更高版本。
+> 💡 **PPT 编辑提示**：导出的 PPTX 页面为 SVG 图片格式。若需编辑：
+> - **方法1**：选中页面 → 右键 → **取消组合** (Ungroup) → 再次取消组合 → 即可编辑为形状和文本框
+> - **方法2**：选中页面 → 右键 → **转换为形状** (Convert to Shape)
+> - 此功能需要 **Office 2016** 或更高版本
 
 ---
 
@@ -208,9 +211,7 @@ ppt-master/
 <details>
 <summary><b>Q: 三种执行师有什么区别？</b></summary>
 
-- **Executor_General**: 通用场景，灵活布局
-- **Executor_Consultant**: 一般咨询，数据可视化
-- **Executor_Consultant_Top**: 顶级咨询（MBB 级），5 大核心技巧
+- **Executor**: 统一执行角色，根据设计规范中的风格类型自动适配
 
 </details>
 

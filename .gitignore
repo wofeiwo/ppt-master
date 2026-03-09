@@ -169,3 +169,6 @@ PERSONAL_NOTES.md
 # Use cloud sync (iCloud/Dropbox) for backup and multi-device access
 projects/*
 !projects/README.md
+
+# Template layouts (private/custom)
+templates/layouts/2022-mc/

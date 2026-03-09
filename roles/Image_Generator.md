@@ -97,13 +97,28 @@
 
 ### 2.3 风格关键词速查表
 
-根据设计规范中的风格选择：
+根据设计规范中的内容类型和设计风格选择：
 
-| 设计风格     | 推荐图片风格       | 核心关键词                                                     |
-| ------------ | ------------------ | -------------------------------------------------------------- |
-| **通用灵活** | 现代插画、扁平设计 | `modern`, `flat design`, `gradient`, `vibrant colors`          |
-| **一般咨询** | 简洁专业、商务风   | `professional`, `clean`, `corporate`, `minimalist`             |
-| **顶级咨询** | 高端简约、抽象几何 | `premium`, `sophisticated`, `geometric`, `abstract`, `elegant` |
+#### 内容类型 → 图片风格映射
+
+| 内容类型 | 推荐图片风格 | 核心关键词 |
+|----------|--------------|------------|
+| **A) 市场展示** | 商业图表、对比图、数据可视化 | `business`, `data visualization`, `chart`, `infographic`, `professional` |
+| **B) 技术汇报** | 技术插图、流程图、系统架构 | `technical diagram`, `flowchart`, `system architecture`, `engineering`, `clean lines` |
+| **C) 架构讲解** | 架构图、组件关系、部署图 | `architecture diagram`, `component relationship`, `deployment`, `technical illustration` |
+| **D) 项目说明** | 进度图表、里程碑、甘特图 | `project timeline`, `milestone`, `Gantt chart`, `progress`, `roadmap` |
+| **E) 业务汇报** | KPI卡片、对比图、流程图 | `KPI dashboard`, `comparison`, `process flow`, `business metrics`, `professional` |
+| **F) 流程主持** | 活动现场、人物互动、氛围图 | `event scene`, `people interaction`, `celebration`, `vibrant`, `lively` |
+
+#### 设计风格 → 图片风格映射
+
+| 设计风格 | 推荐图片风格 | 核心关键词 |
+|----------|--------------|------------|
+| **A) 通用灵活** | 现代插画、扁平设计 | `modern`, `flat design`, `gradient`, `vibrant colors`, `creative` |
+| **B) 一般咨询** | 简洁专业、商务风 | `professional`, `clean`, `corporate`, `minimalist`, `business` |
+| **C) 顶级咨询** | 高端简约、抽象几何 | `premium`, `sophisticated`, `geometric`, `abstract`, `elegant`, `McKinsey style` |
+
+> 💡 **组合使用**：内容类型决定图片的主题和用途，设计风格决定视觉调性。例如"A)市场展示"+"C)顶级咨询"应生成高端商业图表。
 
 ### 2.4 色彩整合方法
 
